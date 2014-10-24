@@ -1,0 +1,337 @@
+/*** base css from jquery.pagewalkthrough.css ***/
+#jpwOverlay { background: url(images/overlay.png) repeat; position: fixed;z-index:9999;top:0;width: 100%;height: 100%;display: block;}
+#jpWalkthrough .overlay { background: url(images/overlay.png) repeat; position: absolute;z-index:9999;}
+#jpWalkthrough .noOverlay { background: none; position: absolute;z-index:9999;}
+#jpWalkthrough #overlayTop {width:100%; top:0; left:0;}
+#jpWalkthrough #overlayLeft {left:0; }
+#jpWalkthrough #highlightedArea {position: absolute; }
+#jpWalkthrough #overlayBottom {width:100%;left:0; }
+
+#jpWalkthrough #topAccessable, #jpWalkthrough #middleAccessable, #jpWalkthrough #bottomAccessable
+{
+    z-index:9999;
+}
+
+#jpWalkthrough #highlightedArea #topLeft, #jpWalkthrough #topAccessable #topLeft{
+    background: url(images/rounded.png) no-repeat left top;
+    height: 30px;
+    width:30px;
+    float:left;
+}
+#jpWalkthrough #highlightedArea #topCenter, #jpWalkthrough #topAccessable #topCenter{
+    background: url(images/borderTop.png) repeat-x 0 0;
+    height: 30px;
+    float:left;
+}
+
+#jpWalkthrough #highlightedArea #topRight, #jpWalkthrough #topAccessable #topRight{
+    background: url(images/rounded.png) no-repeat right top;
+    height: 30px;
+    width:30px;
+    float:left;
+}
+
+#jpWalkthrough #highlightedArea #middleLeft, #jpWalkthrough #middleAccessable #middleLeft{
+    background: url(images/borderLeft.png) repeat-y left top;
+    width:30px;
+    height: 30px;
+    float:left;
+}
+
+#jpWalkthrough #highlightedArea #middleCenter, #jpWalkthrough #middleAccessable #middleCenter{
+    background: transparent;
+    float: left;
+    overflow: hidden;
+}
+
+#jpWalkthrough #highlightedArea #middleRight, #jpWalkthrough #middleAccessable #middleRight{
+    background: url(images/borderRight.png) repeat-y right top;
+    width:30px;
+    height: 30px;
+    float:left;
+}
+
+#jpWalkthrough #highlightedArea #bottomLeft, #jpWalkthrough #bottomAccessable #bottomLeft{
+    background: url(images/rounded.png) no-repeat left bottom;
+    height: 30px;
+    width:30px;
+    float:left;
+}
+#jpWalkthrough #highlightedArea #bottomCenter, #jpWalkthrough #bottomAccessable #bottomCenter{
+    background: url(images/borderBottom.png) repeat-x 0 bottom;
+    height: 30px;
+    float:left;
+}
+
+#jpWalkthrough #highlightedArea #bottomRight, #jpWalkthrough #bottomAccessable #bottomRight{
+    background: url(images/rounded.png) no-repeat right bottom;
+    height: 30px;
+    width:30px;
+    float:left;
+}
+
+#jpWalkthrough #jpwTooltip{    
+    overflow: visible;
+    padding:10px;
+    background: none;
+}
+
+#jpWalkthrough #jpwTooltip #tooltipWrapper{
+    overflow: visible;
+}
+
+#jpWalkthrough #jpwTooltip #tooltipInner{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+/*** end ***/
+
+#jpWalkthrough #jpwTooltip .bottom,
+#jpWalkthrough #jpwTooltip .top{
+	display: none;
+}
+
+.tooltip_container_wrapper {
+	display: none;
+	width: 360px;
+}
+
+.tooltip_container {
+	background: #fff;
+	border: 1px solid #b8b8b8;
+	border-radius: 10px !important;
+}
+#wt-step-0 .tooltip_container,
+#wt-step-1 .tooltip_container,
+#wt-step-5 .tooltip_container,
+#wt-step-6 .tooltip_container,
+#wt-step-7 .tooltip_container,
+#wt-step-9 .tooltip_container {
+	height: 350px;
+}
+#wt-step-2 .tooltip_container,
+#wt-step-3 .tooltip_container,
+#wt-step-4 .tooltip_container {
+	height: 385px;
+}
+#wt-step-8 .tooltip_container {
+	height: 315px;
+}
+
+.tooltip_arrow {
+	background: url('images/tooltip_sprite.png') no-repeat;
+	width: 29px;
+	height: 16px;
+	position: absolute;
+	left: 180px;
+}
+#wt-step-1 .tooltip_arrow,
+#wt-step-5 .tooltip_arrow {
+	background-position: -120px -30px;
+	top: -4px;
+}
+#wt-step-2 .tooltip_arrow,
+#wt-step-8 .tooltip_arrow,
+#wt-step-9 .tooltip_arrow {
+	background-position: -120px -94px;
+	bottom: -5px;
+}
+#wt-step-3 .tooltip_arrow {
+	background-position: -120px -62px;
+	top: -4px;
+}
+#wt-step-4 .tooltip_arrow,
+#wt-step-7 .tooltip_arrow {
+	background-position: -120px -78px;
+	top: -4px;
+}
+#wt-step-6 .tooltip_arrow {
+	background-position: -120px -46px;
+	top: -4px;
+}
+
+.tooltip_container_header {
+	border: 1px solid;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+	height: 66px;
+}
+#wt-step-0 .tooltip_container_header {
+	background-image: linear-gradient(#29b8a9, #0fa192);
+}
+#wt-step-1 .tooltip_container_header,
+#wt-step-5 .tooltip_container_header {
+	background-image: linear-gradient(#e2a428, #cd8f13);
+}
+#wt-step-2 .tooltip_container_header,
+#wt-step-6 .tooltip_container_header {
+	background-image: linear-gradient(#26bb73, #10a55e);
+}
+#wt-step-3 .tooltip_container_header,
+#wt-step-8 .tooltip_container_header {
+	background-image: linear-gradient(#157cbe, #0066a9);
+}
+#wt-step-4 .tooltip_container_header,
+#wt-step-7 .tooltip_container_header,
+#wt-step-9 .tooltip_container_header {
+	background-image: linear-gradient(#db5039, #c63b24);
+}
+
+.tooltip_container_body {
+	color: #050D13;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.tooltip_container_footer {
+	bottom: 10px;
+    height: 62px;
+    left: 10px;
+    position: absolute;
+    width: 360px;
+}
+
+.tooltip_body_title {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 22px 0 20px;
+	margin: 0;
+}
+
+.tooltip_body_text {
+	padding: 0 32px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.tooltip_body_message {
+	color: #0b9c8c;
+	/*color: #cb4e4e;*/
+	font-weight: bold;
+}
+
+.tooltip_icon {
+	background: url('images/tooltip_sprite.png') no-repeat;
+	width: 40px;
+	height: 36px;
+	float: left;
+	margin: 16px 12px 0 20px;
+}
+#wt-step-0 .tooltip_icon {
+	background-position: -40px -108px;
+}
+#wt-step-1 .tooltip_icon {
+	background-position: 0 0;
+}
+#wt-step-2 .tooltip_icon {
+	background-position: -40px 0;
+}
+#wt-step-3 .tooltip_icon {
+	background-position: -80px 0;
+}
+#wt-step-4 .tooltip_icon {
+	background-position: 0px -36px;
+}
+#wt-step-5 .tooltip_icon {
+	background-position: -40px -36px;
+}
+#wt-step-6 .tooltip_icon {
+	background-position: -80px -36px;
+}
+#wt-step-7 .tooltip_icon {
+	background-position: 0px -72px;
+}
+#wt-step-8 .tooltip_icon {
+	background-position: -40px -72px;
+}
+#wt-step-9 .tooltip_icon {
+	background-position: -80px -72px;
+}
+
+.tooltip_title {
+	float: left;
+	font-size: 24px;
+	font-family: 'Roboto';
+	font-weight: 300;
+	padding: 23px 0;
+}
+
+.tooltip_next,
+.see_details,
+.close_step {
+    border-radius: 5px !important;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 300;
+    padding: 10px 26px;
+    display: inline-block;
+}
+.tooltip_next:hover,
+.see_details:hover,
+.close_step:hover {
+	color: #fff;
+}
+#wt-step-0 .tooltip_next {
+	background-image: linear-gradient(#22b4a5, #17ab9b);
+}
+#wt-step-1 .tooltip_next,
+#wt-step-5 .tooltip_next {
+	background-image: linear-gradient(#e5a421, #d99714);
+}
+#wt-step-2 .tooltip_next,
+#wt-step-6 .tooltip_next {
+	background-image: linear-gradient(#21b76f, #14aa62);
+}
+#wt-step-3 .tooltip_next,
+#wt-step-8 .tooltip_next {
+	background-image: linear-gradient(#0d79bf, #006cb3);
+}
+#wt-step-4 .see_details,
+#wt-step-7 .tooltip_next,
+#wt-step-9 .close_step {
+	background-image: linear-gradient(#c63b24, #d13e26);
+}
+
+.tooltip_prev {
+	color: #828689;
+	font-family: 'Roboto';
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 110px;
+}
+.tooltip_prev:hover {
+	color: #828689;
+}
+
+.tooltip_close {
+	background: url('images/tooltip_sprite.png') no-repeat -120px 0;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+    right: 2px;
+    top: 2px;
+	z-index: 999;
+}
+
+.tooltip_body_list {
+	clear: both;
+}
+
+.list_term {
+	float: left;
+	width: 95px;
+	text-align: left;
+	margin-left: 20px;
+	color: #12b868;
+}
+
+.list_definition {
+	float: left;
+	width: 220px;
+	text-align: left;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
